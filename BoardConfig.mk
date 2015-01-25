@@ -102,3 +102,11 @@ TW_INCLUDE_JB_CRYPTO := true
 BOARD_RECOVERY_BLDRMSG_OFFSET := 2048
 RECOVERY_VARIANT := twrp
 TARGET_RECOVERY_DEVICE_MODULES := chargeled
+
+# MultiROM
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := device/htc/zara/mr_init_devices.c
+MR_DPI := hdpi
+MR_FSTAB := device/htc/zara/twrp.fstab
+MR_USE_MROM_FSTAB := true
+MR_KEXEC_MEM_MIN := 0x85000000
